@@ -1,0 +1,43 @@
+# Secrets & Credentials
+.env
+.env.*
+! .env.example
+secrets/*.txt
+! secrets/anthropic_api_key.txt
+! secrets/openai_api_key.txt
+! secrets/gemini_api_key.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+dist/
+out/
+build/
+
+# Docker
+.docker/
+# If we store fluss data locally
+fluss_data/
+
+# ContainerClaw Specific
+.claw_state/
+agent/src/agent_pb2.py
+agent/src/agent_pb2_grpc.py
+bridge/src/proto/*_pb2.py
+bridge/src/proto/*_pb2_grpc.py
+
+# OS Files
+.DS_Store
+Thumbs.db
